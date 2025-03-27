@@ -16,16 +16,16 @@ export default function Home() {
         <Image
           className={styles.app_logo}
           src={appLogo}
-          alt="Vercel logomark"
+          alt="app logo"
           width={120}
           height={120}
         />
-        <h5 >Update date: 17 March 2025</h5>
+        <h5 >Update date: 27 March 2025</h5>
         <div className={styles.privacy_intro_text}>
-          <p>Welcome to <strong>Nalinia: Health and Fitness</strong>!
-          Your privacy is important to us. This Privacy Policy explains how we collect,
-          use, and protect information in our mobile application <strong>Nalinia: Health and Fitness</strong> (the "App").</p>
-
+          <p>Welcome to <strong>Nalinia: Health and Fitness</strong>! Your privacy is important to us. This Privacy Policy 
+            explains how we collect, use, and protect information 
+            in our mobile application <strong>Nalinia: Health and Fitness</strong> (the "App").</p>
+          
         </div>
 
         </div>
@@ -86,10 +86,13 @@ export default function Home() {
     <h2>2. Permissions We Use & Why</h2>
     <div className={styles.policy_elem_embaded}>
       <p>Our app requires certain permissions to function correctly. Below is an explanation of why each permission is needed:</p>
+      <br />
       <ul>
           <li><strong>ACCESS_COARSE_LOCATION & ACCESS_FINE_LOCATION:</strong> Used for location-based fitness tracking.</li>
           <li><strong>ACTIVITY_RECOGNITION:</strong> Required to track steps and detect walking/running activity.</li>
-          <li><strong>FOREGROUND_SERVICE & WAKE_LOCK:</strong> Ensures step tracking and reminders work even when the app is in the background.</li>
+          <li><strong>FOREGROUND_SERVICE & FOREGROUND_SERVICE_LOCATION & WAKE_LOCK:</strong> Ensures step tracking and reminders work even when the app is in the background.</li>
+          <li><strong>FOREGROUND_SERVICE_HEALTH:</strong> this permission supports health-related functionalities, such as monitoring physical activity and providing fitness insights.</li>
+
           <li><strong>POST_NOTIFICATIONS:</strong> Sends health reminders (e.g., water intake, medication alerts).</li>
           <li><strong>SCHEDULE_EXACT_ALARM & RECEIVE_BOOT_COMPLETED:</strong> Schedules health-related reminders and ensures they persist after a reboot.</li>
           <li><strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Required for ads, updates, and cloud-based services.</li>
@@ -159,7 +162,17 @@ export default function Home() {
       <h2>7. Changes to This Privacy Policy</h2>
       <div className={styles.policy_elem_embaded}>
       <p>We may update this policy periodically based on updates we make to the app. Any changes will be posted in this section with an updated date.</p>
+        
+        <div className={styles.policy_elem_embaded}>
+            <div className={styles.changes_text}>
+              Date: 21 March 2025: (This) the initial Version of the app's privacy policy.
+            </div>
+            <div className={styles.changes_text}>
+              Date: 27 March 2025: Removing the <strong>USE_EXACT_ALARM</strong> permission since it's not allowed for this app.
+            </div>
+          
 
+          </div>
       </div>
 
     </div>

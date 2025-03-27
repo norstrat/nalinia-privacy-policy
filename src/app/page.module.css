@@ -56,7 +56,11 @@
   
 }
 
-
+.changes_text {
+  font-family: inherit;
+  font-size: small;
+  color: #383838;
+}
 
 
 

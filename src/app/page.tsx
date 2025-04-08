@@ -20,7 +20,7 @@ export default function Home() {
           width={120}
           height={120}
         />
-        <h5 >Update date: 27 March 2025</h5>
+        <h5 >Update date: 8 April 2025</h5>
         <div className={styles.privacy_intro_text}>
           <p>Welcome to <strong>Nalinia: Health and Fitness</strong>! Your privacy is important to us. This Privacy Policy 
             explains how we collect, use, and protect information 
@@ -90,8 +90,15 @@ export default function Home() {
       <ul>
           <li><strong>ACCESS_COARSE_LOCATION & ACCESS_FINE_LOCATION:</strong> Used for location-based fitness tracking.</li>
           <li><strong>ACTIVITY_RECOGNITION:</strong> Required to track steps and detect walking/running activity.</li>
-          <li><strong>FOREGROUND_SERVICE & FOREGROUND_SERVICE_LOCATION & WAKE_LOCK:</strong> Ensures step tracking and reminders work even when the app is in the background.</li>
+          <li><strong>FOREGROUND_SERVICE & FOREGROUND_SERVICE_LOCATION & WAKE_LOCK:</strong> Ensures step tracking and reminders work even when the app is in the background. <br /> <div className={styles.policy_elem_embaded}>Location access is used strictly for activating motion sensors needed for step and distance tracking. Your location is not stored or shared.</div></li>
           <li><strong>FOREGROUND_SERVICE_HEALTH:</strong> this permission supports health-related functionalities, such as monitoring physical activity and providing fitness insights.</li>
+          <li><strong>HIGH_SAMPLING_RATE_SENSORS:</strong> Our app requests access to the High Sampling Rate Sensors permission on devices running Android 14 and above. 
+          This permission allows us to collect sensor data at higher frequencies to improve the accuracy 
+          and responsiveness of our walking sensor feature. The walking sensor is used to track your physical activity, 
+          specifically your walking movements, to provide a more accurate and responsive experience.
+          <br /><div className={styles.policy_elem_embaded}><p>We ensure that this sensor data is used solely for the purpose of monitoring your walking 
+          activity and is not shared or used for any other purpose. Your privacy is important to us, and we are 
+          committed to keeping your data secure and transparent.</p></div></li>
 
           <li><strong>POST_NOTIFICATIONS:</strong> Sends health reminders (e.g., water intake, medication alerts).</li>
           <li><strong>SCHEDULE_EXACT_ALARM & RECEIVE_BOOT_COMPLETED:</strong> Schedules health-related reminders and ensures they persist after a reboot.</li>
@@ -169,6 +176,9 @@ export default function Home() {
             </div>
             <div className={styles.changes_text}>
               Date: 27 March 2025: Removing the <strong>USE_EXACT_ALARM</strong> permission since it's not allowed for this app.
+            </div>
+            <div className={styles.changes_text}>
+              Date: 8 April 2025: added the declaration for the <strong>HIGH_SAMPLING_RATE_SENSORS</strong>. and adding a clear description for the location services permission.
             </div>
           
 
